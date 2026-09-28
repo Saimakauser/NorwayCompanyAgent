@@ -19,7 +19,19 @@ def run_agent(org_number: str) -> dict:
             "Company verification failed."
         )
 
-    return extract_profile(record)
+    profile = extract_profile(record)
+
+    return {
+        "verification": {
+            "verified": True,
+            "organisation_number": (
+                verification["organisation_number"]
+            ),
+            "evidence_source": record["source"],
+            "retrieved_at": record["retrieved_at"]
+        },
+        "company": profile
+    }
 
 
 if __name__ == "__main__":
