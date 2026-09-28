@@ -169,11 +169,7 @@ NorwayCompanyAgent/
 ├── README.md
 └── .gitignore
 
-Submission Commit
-
-Exact submission commit:
-
-2fd939532084fefbb718c70ae76588aae5d0b742
+Submission commit: The exact final commit hash is provided in the competition submission email.
 
 Repository
 
